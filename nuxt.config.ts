@@ -1,6 +1,7 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt3';
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-
-})
+  // vite: false,
+  buildModules: ['@nuxtjs/tailwindcss'],
+  tailwindcss: { configPath: '~/tailwind.config.js' },
+});
